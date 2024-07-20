@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your JavaScript File</h1>
+        <div class="file-upload">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="titleInput">Title:</label>
+                <input type="text" id="titleInput" name="title" placeholder="Title" required />
+
+                <label for="descriptionInput">Description:</label>
+                <textarea id="descriptionInput" name="description" placeholder="Description" required></textarea>
+
+                <label for="authorInput">Author:</label>
+                <input type="text" id="authorInput" name="author" placeholder="Author" required />
+
+                <label for="authorLinkInput">Author Link:</label>
+                <input type="text" id="authorLinkInput" name="authorLink" placeholder="Author Link" required />
+
+                <label for="repoLinkInput">Repo Link:</label>
+                <input type="text" id="repoLinkInput" name="repoLink" placeholder="Repo Link" required />
+
+                <label for="fileInput">JavaScript File:</label>
+                <input type="file" id="fileInput" name="file" accept=".js" required />
+
+                <label for="iconInput">Optional Icon:</label>
+                <input type="file" id="iconInput" name="icon" accept=".jpg, .jpeg, .png" />
+
+                <button type="submit" id="uploadButton">Upload File</button>
+            </form>
+            <div id="fileContent" class="file-content"></div>
+        </div>
+        <a href="directory.html">Go to Directory Explorer</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
